@@ -1,0 +1,420 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+.container {
+    width: 100%;
+    padding: 20px;
+}
+a {
+    text-decoration: none;
+}
+.logo {
+    position: absolute;
+    left: 60px;
+    top: 50px;
+}
+.logo a {
+    font-weight: bold;
+    color: black;
+    font-size: 2rem;
+    letter-spacing: 1;
+    text-transform: uppercase;
+}
+.searcharea {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    width: 300px;
+    z-index: 1000;
+}
+
+.searchbox {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 25px; /* Rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 10px 20px;
+    width: 200px; /* Adjust width */
+}
+
+.searchbox i {
+    color: #aaa;
+    margin-right: 10px;
+}
+
+.searchbox input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 100%;
+}
+.section1 {
+    position: relative; /* Makes the container a positioned element */
+    height: 100vh; /* Full viewport height (optional) */
+    width: 100%; /* Full width */
+}
+
+.section1 img {
+    position: absolute; /* Allows the image to be positioned relative to its container */
+    top: 20px; /* Moves the image 20px from the top of the container */
+    left: 180px; /* Moves the image 20px from the left of the container */
+    width: 550px; /* Optional: Adjusts the size of the image */
+    height: auto; /* Maintains the aspect ratio */
+}
+
+/* Container for the image and text */
+.section1 {
+    display: flex; /* Aligns the child elements (image and text) horizontally */
+    justify-content: center; /* Centers both elements horizontally */
+    align-items: center; /* Centers both elements vertically */
+    height: 100vh; /* Full viewport height */
+    top: 100px;
+}
+
+/* Image container */
+.image-container img {
+    max-width: 50%; /* Adjust image size to fit al
+    ongside the text */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+
+/* Section1 button (text and button) */
+.section1button {
+     margin-left: 1030px; /* Adds space between the image and the text */
+    text-align: left; /* Aligns the text to the left */
+    position: relative;
+    left: -100px;
+    top: -10px;
+    letter-spacing: 5px;
+}
+
+/* Text styling */
+.section1button .h1
+ {
+    font-family: Arial, sans-serif;
+    margin: 10px 0;
+    font-size: larger;
+    
+}
+
+.section1button .color {
+    color: #475fff; /* Add desired color for highlighted text */
+    
+   
+}
+
+.items{
+    display: flex;
+    align-items: center;
+}
+
+/* Button styling */
+.section1button .btn {
+    padding: 10px 20px;
+    background-color:#475fff;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 15px;
+    
+}
+
+.section1button .btn:hover {
+    background-color: #FF4500; /* Change button color on hover */
+}
+/* Social Media Container */
+.iconarea {
+    position: fixed; /* Keeps the box fixed while scrolling */
+    top: 150px; /* Distance from the top of the screen */
+    left: 20px; /* Distance from the left of the screen */
+    background-color: #f4f4f4; /* Background color for the box */
+    border: 1px solid #ddd; /* Light border around the box */
+    border-radius: 10px; /* Rounded corners for the box */
+    padding: 5px 10px; /* Inner spacing: vertical and horizontal */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    z-index: 1000; /* Keeps it above other content */
+    display: flex; /* Enables flexbox */
+    flex-direction: column; /* Stacks icons vertically */
+    align-items: center; /* Centers icons horizontally in the box */
+    width: 20px; /* Fixed width for the background box */
+}
+
+/* Individual Icon Styling */
+.iconarea i {
+    font-size: 20px; /* Icon size */
+    color: #555; /* Default icon color */
+    padding: 5px; /* Adds space inside the icon area */
+    margin: 1px 0; /* Space between icons */
+    border-radius: 50%; /* Circular icon background */
+    transition: all 0.3s ease; /* Smooth hover effects */
+    cursor: pointer; /* Pointer on hover */
+}
+
+/* Hover Effects for Icons */
+.iconarea i:hover {
+    color: #fff; /* Changes icon color on hover */
+    background-color: #475fff; /* Background color changes on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Adds shadow on hover */
+}
+
+
+
+/* Section Styling */
+.productsection {
+    text-align: center;
+    margin: 40px;
+    margin-top: 50px;
+}
+
+.productsection h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.productsection h3 span {
+    color: #6c63ff;
+}
+
+/* Product Container */
+/* Product Container */
+.product1 {
+    display: grid; /* Enable grid layout */
+    grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
+    grid-template-rows: repeat(2, auto); /* 2 rows, height adjusts automatically */
+    gap: 10px; /* Add spacing between products */
+    justify-items: center; /* Center the products horizontally */
+    align-items: center; /* Center the products vertically */
+    box-shadow: 2px 2px 30px rgba(167,158,245,0.2);
+}
+
+/* Individual Product Styling */
+.product2 {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 100%; /* Full width for consistent sizing */
+    max-width: 250px; /* Optional: Limit maximum width of each product */
+}
+
+.product2 img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product2 p {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #555;
+}
+
+.product2 a {
+    display: block;
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #6c63ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.product2 a.buybtn {
+    background-color: #6c63ff;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.product2 a.buybtn:hover {
+    background-color:orangered;
+    transform: scale(1.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px;
+    background-color: #f9f9f9; /* Adjust background color if needed */
+    
+}
+
+.aboutbox {
+    max-width: 50%;
+}
+
+.aboutbox h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+   
+}
+
+.aboutbox h4 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.aboutbox h4 span {
+    color: #7e57c2; /* Make "Buy Now" a different color */
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.aboutbox p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+.photo {
+    max-width: 45%;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+}
+
+.rezu h2{
+    text-align: center;
+    font-size: bold;
+    text-transform: uppercase;
+}
+
+.zidu {
+    position: relative;
+    width: 300px; /* Set a width for the container */
+    margin: 20px 450px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Background shadow */
+    background-color: #fff; /* White background for the input container */
+    border-radius: 8px; /* Optional: Rounded corners */
+    left: 140px;
+}
+
+.zidu input {
+    width: 100%;
+    padding: 7px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+}
+
+.amio {
+    position: absolute;
+    top: 50%;
+    right: -11px; /* Adjust the distance from the right */
+    transform: translateY(-50%);
+    color: #fff;
+    background-color: #7e57c2; /* Change to your preferred color */
+    padding: 5px 5px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.amio:hover {
+    background-color: #5e35b1; /* Darker color on hover */
+}
+footer{
+    background-color: #333;
+    padding: 15px;
+    text-align: center;
+    margin-top: 60px;
+}
+footer p{
+    color: #f9f9f9;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+/* Desktop and Laptops (1024px and up) */
+@media (min-width: 1024px) {
+    .searcharea {
+        width: 350px;
+    }
+
+    .iconarea {
+        gap: 20px;
+    }
+}
+
+/* Tablets (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .searcharea {
+        width: 280px;
+        padding: 10px 15px;
+    }
+
+    .iconarea {
+        top: 120px;
+        gap: 15px;
+    }
+}
+
+/* Smartphones (320px to 768px) */
+@media (max-width: 768px) {
+    .searcharea {
+        width: 250px;
+        padding: 8px 12px;
+        top: 5px;
+        right: 10px;
+    }
+
+    .iconarea {
+        top: 100px;
+        left: 10px;
+        gap: 10px;
+    }
+}
+
+/* Small Phones (like iPhone SE, 13 Mini) */
+@media (max-width: 428px) {
+    .searcharea {
+        width: 220px;
+        padding: 5px 10px;
+        top: 5px;
+        right: 5px;
+    }
+
+    .iconarea {
+        top: 80px;
+        left: 5px;
+        gap: 8px;
+    }
+}
+
+/* High-Resolution Displays (Retina/4K) */
+@media (min-resolution: 2dppx) {
+    .searcharea {
+        box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .iconarea i {
+        font-size: 35px;
+    }
+}
